@@ -27,6 +27,6 @@ function  # function to create a categorical variable based on a previously defi
     output[[var.name]][is.na(output[[var.name]])] <- missing.val
     ### a list of one variable that is simply the new categorical variable
     ### with categories's probabilities based on cutpoints for the continuous variable.
-    ### Also the missing fraction is based on the fraction missing in the orgiinal continuopus variable.
+    ### Also the missing fraction is based on the fraction missing in the orginal continuopus variable.
   }
 }
