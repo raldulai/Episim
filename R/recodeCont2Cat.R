@@ -1,5 +1,5 @@
 recodeCont2cat <- 
-function  # function to create categorical variable based on a previously defined continuous variable
+function  # function to create a categorical variable based on a previously defined continuous variable
 ### This function will simply define a categorical variable by divided an already created continuous variable 
 ### into several categories based on cutpoint defined in the template excel sheet that was imported as data frame.
 ### Information also include the variable name and the name of categories.
