@@ -1,19 +1,18 @@
-Package: EpiSim
+Package: Episim
 Maintainer: Levi Waldron <lwaldron.research@gmail.com>
 Depends: R (>= 3.1.0)
 Imports: XLConnect, XLConnectJars
-Suggests: 
+Suggests: knitr
 Author: Levi Waldron and Ragheed Al Dulaimi
 Version: 0.1.0
 Date: 2014-12-24
 License: GPL (>= 3.0)
-Title: functions for creating a simulated epidemiological data based on excel sheet with
-         descriptive statistics of the real data.
+VignetteBuilder: knitr
+Title: functions for creating a simulated epidemiological data based on excel sheet with descriptive statistics of the real data.
 Description: Contains functions for reading a template excel sheets as data frame and using the variables names and descriptive statistics to create synthetic datasets. The package include functions to create various variable types including categorical, continuous and date.
 URL: https://github.com/raldulai/Episim
 BugReports: https://github.com/raldulai/Episim/issues
 Packaged: 2014-12-30 21:13:32 UTC; raldulai
 NeedsCompilation: no
-LazyData: true
 Repository: CRAN
 Date/Publication: 2015-01-01 01:40:05

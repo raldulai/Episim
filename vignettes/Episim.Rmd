@@ -1,0 +1,20 @@
+---
+title: "Simulation of epidemiological datasets"
+author: "Ragheed Al-Dulaimi and Levi Waldron"
+date: "r Sys.Date()"
+bibliography:
+  - ../inst/examples/episim.bib
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Simulation of epidemiological datasets}
+output: knitr:::html_vignette
+---
+
+Load the Excel template and look at the first 3 sheets:
+	
+```{r}
+library(Episim)
+dat <- readTemplate(system.file("extdata", "ExampleTemplate.xls",
+                                   package="Episim"))
+dat[1:3]
+```

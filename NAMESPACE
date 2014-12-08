@@ -1,2 +1,2 @@
-exportPattern("6[[:alpha:]]+")
+exportPattern("^[[:alpha:]]+")
 import(XLConnect, XLConnectJars)
