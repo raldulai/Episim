@@ -11,10 +11,10 @@ simValues <-  structure(
   n
   ### the number of observation in the synthetic dataset.
   ){
-  splinefit <- spline(probabilities, quantiles, n=n, method="hyman")
-  interpolated.probs <- splinefit$x
+  splinefit <- spline(probabilities, quantiles, n=max(10000*n, 1e8), method="hyman")
   interpolated.quantiles <- splinefit$y
-  sample(sim.values, size=n)
+  ### missing stuff here where sim.values is created
+  sample(interpolated.quantiles, size=n)
   },ex=function(){
   ## Simulate an original variable from a random exponential distribution
   origvar <- rexp(1000)
@@ -26,11 +26,7 @@ simValues <-  structure(
   abline(a=0, b=1)
   })
 
-
-
 .simMissing <- function(input,n) {
   z <- round (n*input$frac.missing)
   rep(NA, z)
   }
-
-
